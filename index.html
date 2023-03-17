@@ -1,85 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-image: url('background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-      html {
-        height: 100%;
-        cursor: default;
-      }
-      body {
-        font-family: 'Roboto', sans-serif;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        display: table;
-        opacity: 1;
-        animation: fadein 3s forwards;
-      }
-      h1 {
-        font-weight: 700;
-        font-size: 4.5em;
-      }
-      h2 {
-        font-weight: 300;
-        font-size: 1.5em;
-      }
-      #main {
-        vertical-align: middle;
-        display: table-cell;
-      }
-
-      /* Fades in animation */
-      @keyframes fadein {
-        from {
-          opacity: 0;
-        }
-      }
-
-      @media screen and (max-width: 1200px), screen and (max-height: 600px) {
-        h1 {
-          font-size: 3.6em;
-        }
-        h2 {
-          font-size: 1.2em;
-        }
-      }
-      @media screen and (max-width: 900px), screen and (max-height: 450px) {
-        h1 {
-          font-size: 3em;
-        }
-        h2 {
-          font-size: 1em;
-        }
-      }
-      @media screen and (max-width: 600px), screen and (max-height: 300px) {
-        h1 {
-          font-size: 1.8em;
-        }
-        h2 {
-          font-size: 0.6em;
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timesule</title>
-  </head>
-  <body>
-    <div id="main">
-      <h1>Timesule</h1>
-      <h2>a time-locked information concealment mechanism</h2>
-    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1 id="timesule-title">Timesule</h1>
+        <h2 id="timesule-subtitle">
+          Timesule is a revolutionary mechanism that allows users to securely
+          conceal information with a trustless and decentralized time-lock. By
+          utilizing Timesule, your data remains private and can only be accessed
+          at a specified time in the future.
+        </h2>
+      </div>
+      <canvas id="timesule-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
